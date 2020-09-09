@@ -4,10 +4,15 @@
 
 /* font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Open Sans', sans-serif;*/
-
+html{
+	background-color: #FB9C05;
+}
+h1,h2{
+	font-family: 'Nunito', sans-serif;
+}
 .topnav {
 	overflow: hidden;
-	background-color: #FB9C05;
+	background-color: #fff;
 	padding: 0px 150px;
 }
 .topnav a {
@@ -15,7 +20,7 @@
 	display: block;
 	color: #177eae;
 	text-align: center;
-	padding: 25px 40px;
+	padding: 68px 40px ;
 	text-decoration: none;
 	font-size: 17px;
 	font-family: 'Nunito', sans-serif;
@@ -42,6 +47,15 @@
 .main_content {
 	width: 70%;
 	margin: auto;
+	padding-bottom: 10px
+	
+}
+.home_h1{
+	float: left;
+	font-family: 'Nunito', sans-serif;
+}
+.home_text {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .parallax {
@@ -55,6 +69,38 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.container {
+	position: relative;
+	text-align: left;
+	color: #fff;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	font-family: 'Nunito', sans-serif;
+	font-size: 95px;
+}
+.centered_2 {
+	position: absolute;
+	top: 70%;
+	left: 27%;
+	transform: translate(-50%, -50%);
+	font-family: 'Nunito', sans-serif;
+	font-size: 95px;
+	color: #FB9C05;
+}
+.float_right {
+	float: left;
+	padding: 5%;
+}
+table{
+	font-family: 'Open Sans', sans-serif;
+}
+.map{
+	float: right;
+}
 
 iframe{
 	position: relative;
@@ -67,12 +113,14 @@ iframe{
 
 
 footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	padding: 14px 150px;
 	text-align: left;
-	background-color: #FB9C05;
+	background-color: #fff;
 	height: 60px;
-	width: 100%;
-	position: fixed;
 }
 footer a {
 	color: #177eae;
@@ -80,7 +128,7 @@ footer a {
 	font-family: 'Nunito', sans-serif;
 }
 footer a:hover {
-	background-color: #177eae;
+	background-color: #DDD0B5;
 }
 footer p {
 	color: #177eae;
@@ -88,11 +136,34 @@ footer p {
 }
 /* This is the tablet media query*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 	.column {
 		width: 50%;
 		display: block;
 		margin-bottom: 20px;
+	}
+	.container {
+	position: relative;
+	text-align: left;
+	color: #fff;
+	}
+	.centered {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 55px;
+
+	}
+	.centered_2 {
+		position: absolute;
+		top: 60%;
+		left: 29%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 55px;
+		color: #FB9C05;
 	}
 }
 /* This is the phone media query*/
@@ -126,5 +197,28 @@ footer p {
 	footer {
 		padding: 40px 5px;
 		text-align: center;
+	}
+		.container {
+	position: relative;
+	text-align: left;
+	color: #fff;
+	}
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 45px;
+
+	}
+	.centered_2 {
+		position: absolute;
+		top: 80%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 45px;
+		color: #FB9C05;
 	}
 }
