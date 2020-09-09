@@ -1,9 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans&display=swap');
 /* font-family: 'Nunito', sans-serif;*/
+
 /*font-family: 'Open Sans', sans-serif;*/
+
 html{
 	background-color: #FB9C05;
 }
@@ -12,7 +14,7 @@ h1,h2{
 }
 .topnav {
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #FB9C05;
 	padding: 0px 150px;
 }
 .topnav a {
@@ -20,7 +22,7 @@ h1,h2{
 	display: block;
 	color: #177eae;
 	text-align: center;
-	padding: 68px 40px ;
+	padding: 25px 40px;
 	text-decoration: none;
 	font-size: 17px;
 	font-family: 'Nunito', sans-serif;
@@ -37,27 +39,30 @@ h1,h2{
 	display: none;
 }
 /* this is my image in my nav bar */
+
 .topnav img {
 	float: left;
 	height: 120px;
 	width: auto;
 	padding: 20px 16px;
 }
-
 .main_content {
 	width: 70%;
 	margin: auto;
-	padding-bottom: 10px
-	
 }
-.home_h1{
-	float: left;
-	font-family: 'Nunito', sans-serif;
+.float_right {
+	float: right;
+	padding: 5%;
+}
+table{
+	font-family: 'Open Sans', sans-serif;
+}
+.map{
+	float: right;
 }
 .home_text {
 	font-family: 'Open Sans', sans-serif;
 }
-
 .parallax {
 	/* The image used */
 	background-image: url("Images/home_paralax.jpg");
@@ -91,27 +96,12 @@ h1,h2{
 	font-size: 95px;
 	color: #FB9C05;
 }
-.float_right {
-	float: left;
-	padding: 5%;
-}
-table{
-	font-family: 'Open Sans', sans-serif;
-}
-.map{
-	float: right;
-}
-
-iframe{
+iframe {
 	position: relative;
 	width: 70%;
 	display: block;
 	margin: 20px auto 10px;
 }
-
-
-
-
 footer {
 	position: fixed;
 	left: 0;
@@ -119,7 +109,7 @@ footer {
 	width: 100%;
 	padding: 14px 150px;
 	text-align: left;
-	background-color: #fff;
+	background-color: #FB9C05;
 	height: 60px;
 }
 footer a {
@@ -134,36 +124,16 @@ footer p {
 	color: #177eae;
 	font-family: 'Nunito', sans-serif;
 }
+.social {
+	float: right;
+}
 /* This is the tablet media query*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 	.column {
 		width: 50%;
 		display: block;
 		margin-bottom: 20px;
-	}
-	.container {
-	position: relative;
-	text-align: left;
-	color: #fff;
-	}
-	.centered {
-		position: absolute;
-		top: 40%;
-		left: 40%;
-		transform: translate(-50%, -50%);
-		font-family: 'Nunito', sans-serif;
-		font-size: 55px;
-
-	}
-	.centered_2 {
-		position: absolute;
-		top: 60%;
-		left: 29%;
-		transform: translate(-50%, -50%);
-		font-family: 'Nunito', sans-serif;
-		font-size: 55px;
-		color: #FB9C05;
 	}
 }
 /* This is the phone media query*/
@@ -197,28 +167,5 @@ footer p {
 	footer {
 		padding: 40px 5px;
 		text-align: center;
-	}
-		.container {
-	position: relative;
-	text-align: left;
-	color: #fff;
-	}
-	.centered {
-		position: absolute;
-		top: 50%;
-		left: 40%;
-		transform: translate(-50%, -50%);
-		font-family: 'Nunito', sans-serif;
-		font-size: 45px;
-
-	}
-	.centered_2 {
-		position: absolute;
-		top: 80%;
-		left: 40%;
-		transform: translate(-50%, -50%);
-		font-family: 'Nunito', sans-serif;
-		font-size: 45px;
-		color: #FB9C05;
 	}
 }
