@@ -6,24 +6,32 @@
 
 /*font-family: 'Open Sans', sans-serif;*/
 *{
-	margin: 0;
+	margin: 0;/**/
 }
 html {
-	background-color: #fff;
+	background-color: #fff;/* makes the background colour white*/
+	
+}
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 h1, h2 {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif; /*Gives the h1 and h2 heading a font*/
 }
 .tips {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif;/*on the about page changes the text and alingment in the quick tip sections*/
 	text-align: center;
 }
-.topnav {
+.topnav {/*this is the top nav bar */
 	overflow: hidden;
 	background-color: #FB9C05;
 	padding: 0px 100px;
 }
-.topnav a {
+.topnav a {/*this for the text in the nav bar*/
 	float: right;
 	display: block;
 	color: #177eae;
@@ -33,38 +41,38 @@ h1, h2 {
 	font-size: 20px;
 	font-family: 'Nunito', sans-serif;
 }
-.topnav a:hover {
+.topnav a:hover {/*gives a hover effect over the text*/
 	background-color: #177eae;
 	color: #FB9C05;
 }
-.topnav a.active {
+.topnav a.active {/*what every page you are on it will highlight it in the nav bar*/
 	background-color: #DDD0B5;
 	color: #177eae;
 }
 .topnav .icon {
 	display: none;
 }
-/* this is my image in my nav bar */
 
-.topnav img {
+
+.topnav img {/* this is my image in my nav bar */
 	float: left;
 	height: 80px;
 	width: auto;
 	padding: 20px 16px;
 }
-.main_content {
+.main_content { /*this brings in the content on the page*/
 	width: 70%;
 	margin: auto;
 	padding-bottom: 10px
 }
-.home_h1 {
+.home_h1 {/*on the home page changes the h1 headings*/
 	float: left;
 	font-family: 'Nunito', sans-serif;
 }
-.home_text {
+.home_text {/*give the text on the page a differnt font*/
 	font-family: 'Open Sans', sans-serif;
 }
-.parallax {
+.parallax {/*this is the paralax in the home page*/
 	/* The image used */
 	background-image: url("Images/home_paralax.jpg");
 	/* Set a specific height */
@@ -75,7 +83,7 @@ h1, h2 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.parallax_book_workout {
+.parallax_book_workout {/*this is the paralax on the workout page*/
 	/* The image used */
 	background-image: url("Images/book_workout_paralax.jpg");
 	/* Set a specific height */
@@ -91,7 +99,7 @@ h1, h2 {
 	text-align: left;
 	color: #fff;
 }
-.centered {
+.centered {/*This is half the text on my paralax*/
 	position: absolute;
 	top: 50%;
 	left: 40%;
@@ -99,7 +107,7 @@ h1, h2 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 95px;
 }
-.centered_2 {
+.centered_2 {/*This is the other half on the paralax*/
 	position: absolute;
 	top: 70%;
 	left: 27%;
@@ -108,20 +116,28 @@ h1, h2 {
 	font-size: 95px;
 	color: #FB9C05;
 }
+.centered_workout {/*this is the text on my workout paralax*/
+		position: absolute;
+		top: 65%;
+		left: 25%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 70px;
+	}
 .float_left {
 	float: left;
 	padding: 5%;
 }
-table {
+table {/*table in contact page*/
 	font-family: 'Open Sans', sans-serif;
 }
-.map {
+.map {/*map on the contact page*/
 	float: right;
 	margin: 20px 0;
 	height: 200px;
 	width: 1000px;
 }
-iframe {
+iframe {/*videos from Facebook and Youtube*/
 	position: relative;
 	width: 1070px;
 	height: 500px;
@@ -170,7 +186,7 @@ iframe {
 }
 /* Style the counter cards */
 
-.card {
+.card {/*cards on the workout page*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	padding: 16px;
 	text-align: center;
@@ -179,7 +195,7 @@ iframe {
 	border: 6px solid #177eae;
 	margin: 20px 0;
 }
-.workouts {
+.workouts {/*workout images*/
 	width: 75%;
 	height: 25%;
 }
@@ -188,7 +204,7 @@ iframe {
 	padding: 30px;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
-footer {
+footer {/*footer*/
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -197,7 +213,7 @@ footer {
 	background-color: #FB9C05;
 	height: 60px;
 }
-footer a {
+footer a {/*text on the footer*/
 	color: #177eae;
 	text-decoration: none;
 	font-family: 'Nunito', sans-serif;
@@ -238,7 +254,7 @@ footer p {
 		padding: 0px 5px;
 	}
 	.column {
-		width: 50%;
+		width: 65%;
 		display: block;
 		margin-bottom: 20px;
 	}
@@ -247,7 +263,7 @@ footer p {
 		text-align: left;
 		color: #fff;
 	}
-	.centered {
+	.centered { 
 		position: absolute;
 		top: 40%;
 		left: 40%;
@@ -263,6 +279,14 @@ footer p {
 		font-family: 'Nunito', sans-serif;
 		font-size: 55px;
 		color: #FB9C05;
+	}
+	.centered_workout {
+		position: absolute;
+		top: 60%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 70px;
 	}
 	.parallax {
 		/* The image used */
@@ -281,6 +305,18 @@ footer p {
 		padding: 5%;
 		width: 95%;
 	}
+	.parallax {/*this is the paralax in the home page*/
+		/* The image used */
+		background-image: url("Images/home_paralax.jpg");
+		/* Set a specific height */
+		min-height: 500px;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+}
 	.parallax_book_workout {
 		/* The image used */
 		background-image: url("Images/book_workout_paralax.jpg");
@@ -291,10 +327,11 @@ footer p {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		width: 140%;
+		width: 100%;
 	}
 	.card {
-		width: 250%;
+		width: 140%;
+		
 	}
 	iframe {
 		position: relative;
@@ -303,6 +340,8 @@ footer p {
 		display: block;
 		margin: 20px auto 10px;
 	}
+
+	
 }
 /* This is the phone media query*/
 
@@ -352,12 +391,20 @@ footer p {
 	}
 	.centered_2 {
 		position: absolute;
-		top: 80%;
-		left: 40%;
+		top: 65%;
+		left: 38%;
 		transform: translate(-50%, -50%);
 		font-family: 'Nunito', sans-serif;
 		font-size: 45px;
 		color: #FB9C05;
+	}
+	.centered_workout {
+		position: absolute;
+		top: 65%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+		font-family: 'Nunito', sans-serif;
+		font-size: 40px;
 	}
 	.float_left {
 		float: left;
@@ -365,8 +412,25 @@ footer p {
 		width: 95%;
 	}
 	.card {
-		width: 85%;
+		width: 60%;
 	}
+		.column {
+		width: 30%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.parallax {/*this is the paralax in the home page*/
+	/* The image used */
+	background-image: url("Images/home_paralax.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
 	.parallax_book_workout {
 		/* The image used */
 		background-image: url("Images/book_workout_paralax.jpg");
